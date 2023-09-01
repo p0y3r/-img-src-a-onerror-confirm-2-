@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build__img_src_a_onerror_confirm_2__1693567500455
+  name: Build -img-src-a-onerror-confirm-2-
+  orgIdentifier: default
+  projectIdentifier: default_project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1693567493505
+        repoName: p0y3r/-img-src-a-onerror-confirm-2-
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI

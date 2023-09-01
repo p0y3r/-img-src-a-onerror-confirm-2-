@@ -1,0 +1,14 @@
+inputSet:
+  name: Build__img_src_a_onerror_confirm_2__1693567500455-push-trigger-input-set
+  identifier: Build__img_src_a_onerror_confirm_2__1693567500455pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build__img_src_a_onerror_confirm_2__1693567500455
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
